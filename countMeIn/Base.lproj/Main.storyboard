@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H7q-lq-2qh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H7q-lq-2qh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -343,37 +343,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZYR-gz-lpU">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZYR-gz-lpU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="319-Lj-FZm">
-                                <rect key="frame" x="263" y="44" width="131" height="32"/>
-                                <segments>
-                                    <segment title="Map"/>
-                                    <segment title="List"/>
-                                </segments>
-                            </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZdW-7c-RmE">
-                                <rect key="frame" x="30" y="747" width="354" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lh8-kl-0zQ">
+                                <rect key="frame" x="0.0" y="55" width="414" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JHO-en-IY7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="319-Lj-FZm" firstAttribute="leading" secondItem="JHO-en-IY7" secondAttribute="leading" constant="263" id="4ji-dR-ZUd"/>
-                            <constraint firstItem="ZdW-7c-RmE" firstAttribute="centerX" secondItem="5kS-4p-ReY" secondAttribute="centerX" id="Jbv-wI-AeX"/>
-                            <constraint firstItem="ZdW-7c-RmE" firstAttribute="leading" secondItem="JHO-en-IY7" secondAttribute="leading" constant="30" id="T8e-kn-K16"/>
-                            <constraint firstItem="ZdW-7c-RmE" firstAttribute="centerX" secondItem="ZYR-gz-lpU" secondAttribute="centerX" id="XeV-ML-Uj6"/>
-                            <constraint firstItem="319-Lj-FZm" firstAttribute="trailing" secondItem="5kS-4p-ReY" secondAttribute="trailingMargin" id="elx-yX-Xwg"/>
-                            <constraint firstItem="JHO-en-IY7" firstAttribute="bottom" secondItem="ZdW-7c-RmE" secondAttribute="bottom" constant="32" id="fcH-Dv-RCO"/>
-                            <constraint firstItem="319-Lj-FZm" firstAttribute="top" secondItem="JHO-en-IY7" secondAttribute="top" id="g4l-Kh-ahG"/>
+                            <constraint firstItem="lh8-kl-0zQ" firstAttribute="leading" secondItem="ZYR-gz-lpU" secondAttribute="leading" id="G0i-EF-LPb"/>
+                            <constraint firstItem="lh8-kl-0zQ" firstAttribute="centerX" secondItem="5kS-4p-ReY" secondAttribute="centerX" id="QBJ-t9-byK"/>
+                            <constraint firstItem="lh8-kl-0zQ" firstAttribute="trailing" secondItem="ZYR-gz-lpU" secondAttribute="trailing" id="X0G-mN-ugC"/>
+                            <constraint firstItem="ZYR-gz-lpU" firstAttribute="bottom" secondItem="JHO-en-IY7" secondAttribute="bottom" id="Z7S-bs-gG9"/>
+                            <constraint firstItem="ZYR-gz-lpU" firstAttribute="top" secondItem="5kS-4p-ReY" secondAttribute="topMargin" constant="-44" id="hYC-yJ-eP8"/>
+                            <constraint firstItem="lh8-kl-0zQ" firstAttribute="leading" secondItem="JHO-en-IY7" secondAttribute="leading" id="kcE-hH-w2D"/>
+                            <constraint firstItem="lh8-kl-0zQ" firstAttribute="top" secondItem="JHO-en-IY7" secondAttribute="top" constant="11" id="ykK-wE-YVg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Clinics" image="building.2.crop.circle" catalog="system" id="EZl-D8-GuL"/>
                     <connections>
                         <outlet property="map" destination="ZYR-gz-lpU" id="lQX-7l-qq7"/>
+                        <outlet property="searchBar" destination="lh8-kl-0zQ" id="chO-7F-hrb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ToK-Hy-Yr8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -390,7 +383,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="38l-Wp-qJj">
-                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="38l-Wp-qJj" id="nlA-m3-cVS">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>

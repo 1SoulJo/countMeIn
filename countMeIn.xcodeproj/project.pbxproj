@@ -16,6 +16,8 @@
 		FE094A42260C349C008D704E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE094A40260C349C008D704E /* LaunchScreen.storyboard */; };
 		FE094A52260C383D008D704E /* ClinicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE094A51260C383D008D704E /* ClinicsVC.swift */; };
 		FE094A55260C3F0C008D704E /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE094A54260C3F0C008D704E /* LaunchVC.swift */; };
+		FE2830EB263BC2400056F327 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE2830EA263BC2400056F327 /* GoogleService-Info.plist */; };
+		FE2830EE263BC9300056F327 /* Clinic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2830ED263BC9300056F327 /* Clinic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		FE094A43260C349C008D704E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE094A51260C383D008D704E /* ClinicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsVC.swift; sourceTree = "<group>"; };
 		FE094A54260C3F0C008D704E /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
+		FE2830EA263BC2400056F327 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE2830ED263BC9300056F327 /* Clinic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clinic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		FE094A31260C349B008D704E /* countMeIn */ = {
 			isa = PBXGroup;
 			children = (
+				FE2830EC263BC9230056F327 /* Model */,
 				FE094A4F260C35A5008D704E /* VC */,
 				FE094A32260C349B008D704E /* AppDelegate.swift */,
 				FE094A34260C349B008D704E /* SceneDelegate.swift */,
@@ -91,6 +96,7 @@
 				FE094A40260C349C008D704E /* LaunchScreen.storyboard */,
 				FE094A3E260C349C008D704E /* Assets.xcassets */,
 				FE094A43260C349C008D704E /* Info.plist */,
+				FE2830EA263BC2400056F327 /* GoogleService-Info.plist */,
 				FE094A3B260C349B008D704E /* countMeIn.xcdatamodeld */,
 			);
 			path = countMeIn;
@@ -103,6 +109,14 @@
 				FE094A51260C383D008D704E /* ClinicsVC.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		FE2830EC263BC9230056F327 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE2830ED263BC9300056F327 /* Clinic.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE094A42260C349C008D704E /* LaunchScreen.storyboard in Resources */,
+				FE2830EB263BC2400056F327 /* GoogleService-Info.plist in Resources */,
 				FE094A3F260C349C008D704E /* Assets.xcassets in Resources */,
 				FE094A3A260C349B008D704E /* Main.storyboard in Resources */,
 			);
@@ -222,6 +237,7 @@
 				FE094A52260C383D008D704E /* ClinicsVC.swift in Sources */,
 				FE094A3D260C349B008D704E /* countMeIn.xcdatamodeld in Sources */,
 				FE094A33260C349B008D704E /* AppDelegate.swift in Sources */,
+				FE2830EE263BC9300056F327 /* Clinic.swift in Sources */,
 				FE094A55260C3F0C008D704E /* LaunchVC.swift in Sources */,
 				FE094A35260C349B008D704E /* SceneDelegate.swift in Sources */,
 			);
